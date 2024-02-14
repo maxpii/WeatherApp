@@ -9,12 +9,19 @@
 
 </head>
 <body>
-        <div id="title">Hello</div>
-        <div id="title2">Welcome to my weather app</div>
+        <div id="title">Welcome to ManuWeather</div>
         <form action="">
-            <label id="fname">City Name:</label>
-            <input type="text" id="textBox" name="fname"><br><br>
-            <input type="button" onclick="getData()" value="Send form data!">
+        <label style="font-size:60px; font-family:cursive; margin-top:0px; padding:0px;"
+        id="fname">Location Name:</label>
+
+        <input style="font-size:40px; width:500px; font-family: fantasy;"
+        type="text" id="textBox" name="fname"><br><br>
+
+        <input style="width:200px;height:66px; font-size:25px; text-align: center; 
+        font-family:sans-serif; background-color: chartreuse;
+        border-radius:20px; border-width: 0px;" 
+        type="button" onclick="getData()" value="Send form data!">
+
          </form>
             <p id="cel">Celcius:</p>
             <p id="far">Farenheit:</p>

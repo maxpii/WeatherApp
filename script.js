@@ -3,7 +3,7 @@ let farenheit = document.querySelector("#far");
 let form = document.querySelector("#textBox");
 let description = document.querySelector("#description");
 let image = document.querySelector("#image");
-let key = "4214162e5eab401eb5322634240702";
+let key = "1758ad1f462f445c98a03322241202";
 function getData(){
     let something = 0;
 fetch(`http://api.weatherapi.com/v1/current.json?key=${key}&q=${form.value}`)
@@ -20,7 +20,7 @@ fetch(`http://api.weatherapi.com/v1/current.json?key=${key}&q=${form.value}`)
         console.log(data);
         celcius.innerHTML = "Celcius: " + data.current.temp_c;
         farenheit.innerHTML = "Farenheit: " + data.current.temp_f;
-        description.innerHTML = "Description " + data.current.condition.text;
+        description.innerHTML = "Description: " + data.current.condition.text;
         image.src = data.current.condition.icon;
     });
 }
